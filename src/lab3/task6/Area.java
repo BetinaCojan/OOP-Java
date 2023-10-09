@@ -4,8 +4,6 @@ import lab3.task1.CandyBox;
 import lab3.task1.ChocAmor;
 import lab3.task1.Lindt;
 
-import java.util.ArrayList;
-
 public class Area {
     CandyBox candyBox;
     int number;

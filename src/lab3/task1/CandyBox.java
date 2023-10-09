@@ -1,7 +1,5 @@
 package lab3.task1;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Objects;
 
 public class CandyBox {
