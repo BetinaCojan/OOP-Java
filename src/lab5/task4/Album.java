@@ -7,25 +7,13 @@ public abstract class Album {
 
     abstract void addSong(Song song);
 
-    void removeSong(Song song) {
+    public void removeSong(Song song) {
         songs.remove(song);
     }
 
     public int getLenght() {
        return songs.size();
     }
-
-    public String getNamesFromAlbum() {
-        StringBuilder names = new StringBuilder();
-        for (Song song : songs) {
-            names.append(song.name).append(" ");
-        }
-        return names.toString();
-    }
-
-   /* public String toString () {
-        return "Album{songs=[" + getNamesFromAlbum() + "]}";
-    }*/
 
     @Override
     public String toString() {

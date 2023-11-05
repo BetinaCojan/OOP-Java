@@ -102,6 +102,10 @@ public class Main {
         dangerous.addSong(song3);
         dangerous.addSong(song6);
         System.out.println(dangerous.getLenght());
+
+        dangerous.removeSong(song2);
+        System.out.println(dangerous.getLenght());
+
         System.out.println(dangerous);
 
         ThrillerAlbum thriller = new ThrillerAlbum();

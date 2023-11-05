@@ -1,14 +1,12 @@
 package lab5.task4;
 
-import java.util.ArrayList;
-
 public class DangerousAlbum extends Album {
-    ArrayList<Song> songs = new ArrayList<>();
 
     @Override
     public void addSong(Song song) {
         if (isPrime(song.ID)) {
             songs.add(song);
+            System.out.println("Song added to the dangerous album");
         } else {
             System.out.println("It's not accepted in the dangerous album");
         }

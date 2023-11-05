@@ -1,10 +1,6 @@
 package lab5.task4;
 
-import java.util.ArrayList;
-
 public class BadAlbum extends Album {
-
-    ArrayList<Song> songs = new ArrayList<>();
 
     boolean isPalindrome (int number) {
         int digit;
@@ -22,9 +18,11 @@ public class BadAlbum extends Album {
 
     @Override
     public void addSong(Song song) {
-        if (isPalindrome(song.ID) && (song.name.length() == 3))
+        if (isPalindrome(song.getID()) && song.getName().length() == 3) {
             songs.add(song);
-        else
-            System.out.println("It's not accepted in the dab album");
+            System.out.println("Song added to the BadAlbum");
+        } else {
+            System.out.println("Song is not accepted in the BadAlbum");
+        }
     }
 }
